@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG_CRISTIAN_ALFARO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav .logo {
+            height: 60px;
+            width: auto;
+            margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+        }
+        nav .center-text {
+            text-align: center;
+            flex-grow: 1;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 800px; /* Ajusta este valor según sea necesario */
+            margin: 20px auto; /* Centra el video horizontalmente */
+            border-radius: 20px; /* Puntas redondeadas */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para efecto de flotar */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px; /* Puntas redondeadas */
+        }
+
+        /* Estilos para la tarjeta */
+        .card {
+            max-width: 18rem; /* Ancho máximo de la tarjeta */
+            border-radius: 20px; /* Puntas redondeadas */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra */
+            margin: 20px auto; /* Centra la tarjeta horizontalmente */
+        }
+
+        .card-img-top {
+            height: 60px; /* Altura del logo */
+            width: auto;
+            margin-bottom: 10px; /* Espacio entre el logo y el contenido */
+            margin-left: 10px; /* Ajuste del margen izquierdo */
+        }
+
+        .card-body {
+            margin-left: 10px; /* Ajuste del margen izquierdo */
+        }
+
+        @media (max-width: 767px) {
+            nav .center-text {
+                text-align: left; /* Alineación del texto en dispositivos móviles */
+                flex-grow: 1;
+                margin-right: 10px; /* Margen derecho del texto en dispositivos móviles */
+                max-width: calc(100% - 100px); /* Ajuste del ancho máximo para dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <a href="#" class="enlace"><img src="https://drive.google.com/uc?id=1ebLjhqAKeNdVhJdrLg0NnstaNONS70W4" class="logo" alt="Logo"></a>
+        </div>
+        <a class="center-text">BIENVENIDOS A MI BLOG PERSONAL</a>
+    </nav>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/3I_awBzvjPU?si=oCWY1YElYWN8_yA4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="card" style="margin-bottom: 20px;">
+        <br>
+        <img src="https://drive.google.com/uc?id=1ebLjhqAKeNdVhJdrLg0NnstaNONS70W4" class="card-img-top" alt="Logo">
+        <div class="card-body">
+            <h5 class="card-title">Video de presentacion del portafolio</h5>
+            <p class="card-text">Este video de aquí arriba es mi portafolio personal, Si no carga puedes ir al boton de abajo.</p>
+            <a href="#" class="btn btn-primary" style="display: inline-block; background-color: #007bff; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; transition: background-color 0.3s; margin-bottom: 10px;">VER VIDEO</a>
+        </div>
+    </div>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <div class="card" style="margin-bottom: 20px;">
+        <br>
+        <i class="fas fa-file-pdf card-img-top" style="font-size: 80px; transition: transform 0.3s; cursor: pointer;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"></i>
+        <div class="card-body">
+            <h5 class="card-title">PDF DEL PORTAFOLIO</h5>
+            <p class="card-text">ESTE BOTÓN TE REDIGIRÁ AL PORTAFOLIO PARA QUE PUEDAS DESCARGARLO</p>
+            <a href="#" class="btn btn-primary" style="display: inline-block; background-color: #007bff; color: white; padding: 6px 12px; border-radius: 4px; text-decoration: none; transition: background-color 0.3s; margin-bottom: 10px;">VER PORTAFOLIO</a>
+        </div>
+    </div>
+</body>
+</html>
